@@ -14,7 +14,7 @@
 
 ## ACCEPTANCE CRITERIA
 
-[  ]  uses semantic HTML elements
+[DONE]  uses semantic HTML elements
 
 [  ]  uses universal, element, and class selectors in CSS
 
@@ -24,17 +24,17 @@
 
 [  ] the page uses at least two heading elements (`<h1>` through `<h6>`)
 
-[  ] the header is fixed to the top of the page on scroll
+[DONE] the header is fixed to the top of the page on scroll
 
-[  ] the header contains a navigation bar with three links that display inline, including a contact link
+[DONE] the header contains a navigation bar with three links that display inline, including a contact link
 
 [  ] if the contact link is clicked, the page jumps directly to the contact form
 
-[  ] the contact form includes `input` elements for name and email
+[DONE] the contact form includes `input` elements for name and email
 
-[  ] the contact form includes a Send button
+[DONE] the contact form includes a Send button
 
-[  ] the image includes a descriptive `alt` attribute
+[DONE] the image includes a descriptive `alt` attribute
 
 [  ] It's done when the page is deployed to GitHub Pages
 
@@ -43,57 +43,66 @@
 <!DOCTYPE html>
 
 <head>
-    <!--Todo: Rework title when I have a better idea of my overall design-->
+
     <Title>jr</Title>
     <meta charset="UTF-8">
     <meta name="description" content="Landing page">
     <meta name="author" content="Jordan Rothwell">
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
-    
-    <!-- This is the header section -->
 
     <header>
 
-        <h1>HEADER</h1>
+        <h1>Header</h1>
 
     </header>
-
-    <!-- This is section 1 (FIRST HALF OF TAGLINE) -->
-
-    <section id="section1">
     
-        <h2>SECTION 1</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus lacinia eros vitae ante hendrerit, non ultrices felis tempus. Aliquam accumsan facilisis urna, non hendrerit eros posuere ut. Curabitur tempus volutpat lorem accumsan venenatis. Sed pharetra diam justo, et pharetra urna laoreet sit amet. Aliquam erat volutpat. Integer tempor efficitur urna at ullamcorper. Etiam nec arcu vitae massa semper gravida quis id mi. Pellentesque diam risus, pharetra et sollicitudin scelerisque, rhoncus ultricies quam. Maecenas ut sollicitudin dui. In id arcu ac nisl pellentesque malesuada nec vitae ex. Morbi quis vehicula massa. Mauris facilisis bibendum feugiat. Aliquam lobortis justo volutpat lectus feugiat, sit amet viverra nulla condimentum. Cras fermentum sagittis neque, ut consequat eros iaculis eu.</p>
+    <nav>
+
+        <div class="navigation">
+            <a href="Github">Github</a>
+            <a href="Portfolio">Portfolio</a>
+            <a href="Contact">Contact</a>
+        </div>
+        
+    </nav>
+
+    <section>
+
+        <h2 class="tagline">
+            First part of tagline...
+        </h2>
+
+        <img id="landing_image" src="/landing_image/landing_image.PNG" alt="messy to simple">
+
+        <h2 class="tagline">
+            ...second part of tagline.
+        </h2>
+
     </section>
 
-    <!-- This is section 2 (IMAGE TO BREAK UP TAGLINE)-->
+    <section id="contact_section">
+        
+        <h2>Contact us:</h2>
 
-    <section id="section2">
+        <form action="">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          
+            <label for="email">Email</label>
+            <input type="text" id="email" name="emailaddress" placeholder="Your email address..">
+            </select>
+          
+            <input type="submit" value="Submit">
+          </form>
 
-        <h2>SECTION 2</h2>
-            <p>Ut faucibus ex nec nibh mollis placerat. In consectetur, enim nec posuere sagittis, dui justo pharetra urna, id mattis ligula lorem eget diam. Vivamus a nunc sagittis, maximus justo sed, hendrerit erat. Mauris porta, diam ultricies euismod tincidunt, mauris lorem iaculis tortor, in rutrum tellus dui in orci. Ut cursus ligula pulvinar quam tempor efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut finibus lectus, id pellentesque justo. Mauris sed finibus libero, sagittis consectetur sem. Etiam vel eros et arcu rhoncus convallis a consequat justo. Donec et mollis mi. Cras vehicula elementum sem, id euismod risus viverra id. Maecenas eleifend, sapien et mattis molestie, libero purus hendrerit felis, imperdiet elementum neque nunc ac mauris. Suspendisse vitae felis dolor. Sed at purus vel quam varius accumsan ac vitae libero. Cras molestie massa vulputate metus gravida, a mollis neque mollis. Nam sem eros, ultrices sed diam quis, ullamcorper rhoncus ante.</p>
     </section>
-
-    <!-- This is section 3 (SECOND HALF OF TAGLINE) -->
-
-    <section id="section3">
-
-        <h2>SECTION 3</h2>
-            <p>Proin imperdiet convallis viverra. Aenean ante tellus, efficitur ac suscipit vel, posuere id dui. Quisque id nibh ut sem hendrerit ullamcorper. Maecenas eu rhoncus metus. Praesent tristique facilisis aliquam. Sed auctor sem nulla, id auctor eros venenatis at. Curabitur maximus massa mollis lacinia egestas. Vivamus vel dui vehicula, scelerisque purus non, volutpat tortor.</p>
-    </section>
-
-    <!-- This is section 4 (CONTACT FORM) -->
-
-    <section id="section4">
-
-        <h2>SECTION 4</h2>
-            <p>Donec sollicitudin tristique metus a dignissim. In hac habitasse platea dictumst. Sed ligula dui, egestas in massa et, pretium imperdiet enim. Fusce euismod orci a sagittis feugiat. Cras ac erat mollis, congue urna vel, sagittis enim. In viverra mattis sem et volutpat. Vivamus eleifend pellentesque ultricies.</p>
-    </section>
-
-    <!-- This is the footer section -->
 
     <footer>
 

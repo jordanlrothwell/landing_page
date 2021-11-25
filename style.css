@@ -1,8 +1,9 @@
 * {
-    color: white;
+    color: black;
 }
 
 header {
+    color: white;
     background-color: blue;
     text-align: center;
     position: sticky;
@@ -14,22 +15,66 @@ footer {
     text-align: center;
 }
 
-#section1 {
-    background-color: red;
-    text-align: center;
-}
-
-#section2 {
-    background-color: orange;
-    text-align: center;
-}
-
-#section3 {
+.tagline {
     background-color: fuchsia;
-    text-align: center;
+    position: relative;
+    z-index: -1;
 }
 
-#section4 {
+#first_tag {
+    background-color: fuchsia;
+    position: absolute;
+    left: 10vw;
+    border: black solid 5px;
+}
+
+#second_tag {
+    background-color: fuchsia;
+    position: absolute;
+    right: 10vw;
+    border: black solid 5px;
+}
+
+.image_section {
+    background-color: orange;
+  }
+
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+#landing_image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    width: 600px;
+}
+
+#contact_section {
     background-color: green;
     text-align: center;
 }
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
