@@ -1,61 +1,71 @@
 * {
     color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    position: relative;
 }
 
 header {
-    color: white;
-    background-color: blue;
-    text-align: center;
     position: sticky;
-    top: 0;
+    top: 10px;
+    text-align: center;
 }
 
-footer {
-    background-color: blueviolet;
-    text-align: center;
+nav {
+    list-style-type: none;
+    text-align: right;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    color: hotpink;
+}
+
+section {
+
 }
 
 .tagline {
-    background-color: fuchsia;
-    position: relative;
-    z-index: -1;
+
 }
 
 #first_tag {
-    background-color: fuchsia;
-    position: absolute;
-    left: 10vw;
-    border: black solid 5px;
+
 }
 
 #second_tag {
-    background-color: fuchsia;
-    position: absolute;
-    right: 10vw;
-    border: black solid 5px;
-}
 
-.image_section {
-    background-color: orange;
-  }
-
-.center {
-    margin: auto;
-    width: 50%;
-    padding: 10px;
 }
 
 #landing_image {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 200px;
-    width: 600px;
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 20%;
 }
 
 #contact_section {
-    background-color: green;
-    text-align: center;
+    height: 400px;
+    width: 800px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0 0 -25px;
 }
 
 input[type=text], select {
@@ -70,7 +80,7 @@ input[type=text], select {
 
 input[type=submit] {
     width: 100%;
-    background-color: #04AA6D;
+    background-color: ;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -78,3 +88,11 @@ input[type=submit] {
     border-radius: 4px;
     cursor: pointer;
   }
+
+#privacy_link {
+    display: inline;
+}
+
+footer {
+    position: absolute;
+}
